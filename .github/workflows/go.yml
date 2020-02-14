@@ -25,6 +25,6 @@ jobs:
         fi
 
     - name: Build
-      run: go build -v .
+      run: cd pkg go build -v .
     - name: Test
-      run: go test -v
+      run: cd pkg go test -v
